@@ -30,6 +30,7 @@ export class AuthService {
 
     public async login(user) {
         const token = await this.generateToken(user);
+        console.log('i got here');
         return { user, token };
     }
 
